@@ -1,0 +1,19 @@
+name = "carothers_lean"
+version = "0.1.0"
+defaultTargets = ["carothers_lean"]
+
+[[lean_lib]]
+name = "CarothersLean"
+
+[[lean_exe]]
+name = "carothers_lean"
+root = "Main"
+
+[[pkg]]
+name = "mathlib"
+url = "https://github.com/leanprover-community/mathlib4.git"
+rev = "master"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
